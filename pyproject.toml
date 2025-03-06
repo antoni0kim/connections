@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "connections"
+version = 0.0.1
+description = "Machine-Learning based New York Time's Connection solver"
+authors = {
+	{ name = "Antonio Kim", email = "antonio_kim@outlook.com" }
+}
+readme = "README.md"
+requires-python=">=3.8"
+
+[project.scripts]
+connections = "ui.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
