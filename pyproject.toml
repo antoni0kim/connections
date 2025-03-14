@@ -21,4 +21,4 @@ test = [
 ]
 
 [project.scripts]
-connections = "connections:app"
+connections = "connections.cli:app"
