@@ -3,10 +3,10 @@ name: main
 on:
   push:
     branches:
-      - versions
+      - main
   pull_request:
     branches:
-      - versions
+      - main
 
 jobs:
   test-and-lint:
