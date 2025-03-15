@@ -6,7 +6,7 @@ on:
       - versions
   pull_request:
     branches:
-      - version
+      - versions
 
 jobs
   test-and-lint:
