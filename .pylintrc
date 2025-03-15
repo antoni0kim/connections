@@ -1,0 +1,15 @@
+[MASTER]
+ignore = .venv, .tox, build, dist
+
+[MESSAGE CONTROL]
+disable =
+    missing-docstring,  # Disable missing docstring warnings
+    too-few-public-methods,  # Disable too few public methods warnings
+    invalid-name,  # Disable variable naming warnings
+    too-many-arguments,  # Disable too many arguments warnings
+    too-many-locals,  # Disable too many locals warnings
+    too-many-branches,  # Disable too many branches warnings
+    too-many-statements,  # Disable too many statements warnings
+
+[FORMAT]
+max-line-length = 88
