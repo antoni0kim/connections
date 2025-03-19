@@ -1,5 +1,5 @@
 import typer
-from typing import List
+from typing import List, Optional
 
 from . import __version__
 from . import api
@@ -20,12 +20,17 @@ def status():
 
 
 @app.command()
-def solve(words: List[str] = typer.Argument(..., help="16 words from Connections")):
+def solve(
+    words: Optional[List[str]] = typer.Argument(None, help="16 words from Connections")
+):
     """
     Returns estimated lists of words in group based on the
     input. Based on ML model used to solve the connections.
-    Must be exactly 16 words
+    Input must be exactly 16 words.
     """
+    if words is None:
+        typer.echo("Error: There must be inputs after solve command.", err=True)
+        raise typer.Exit(code=1)
 
     if len(words) != 16:
         typer.echo("Error: Input must have 16 words after solve command", err=True)
