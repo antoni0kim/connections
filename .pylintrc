@@ -1,5 +1,5 @@
 [MASTER]
-ignore = .venv, .tox, build, dist
+ignore = .venv, .tox, build, dist, src/models
 
 [MESSAGE CONTROL]
 disable =
