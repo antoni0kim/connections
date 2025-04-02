@@ -2,8 +2,7 @@
 
 ![GitHub Actions Status](https://github.com/antoni0kim/connections/actions/workflows/main.yml/badge.svg)
 
-This is a simple machine-learning app solving New York Times' Connections. To install the app, it is highly recommended that the app is installed in
-virtual environment. Once virtual environment is set up, you should have both torch and transformers installed:
+This is a simple machine-learning app solving New York Times' Connections using Terminal CLI. To install the app, it is highly recommended that the app is installed in virtual environment. Once virtual environment is set up, you should have both torch and transformers installed:
 
 ```bash
 pip install torch transformers
@@ -16,7 +15,7 @@ pip install -e .
 ```
 
 The installation of dependencies is due to testing environment being large storage on the pipeline. Thus, it is recommended to install them separately
-(see below for explanation). Once all the dependencies are installed, you can now use the following commands to run the app:
+(see below for explanation). Once all the dependencies are installed, you can now use the following commands on CLI to run the app:
 
 | Commands | Description |
 | --- | --- |
