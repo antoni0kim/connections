@@ -1,5 +1,5 @@
-import typer
 from typing import List, Optional
+import typer
 
 from . import __version__
 from . import api
